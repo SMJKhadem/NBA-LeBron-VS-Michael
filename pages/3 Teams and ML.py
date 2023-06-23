@@ -132,17 +132,12 @@ st.write(' ')
 
 
 models_name = [
-"RandomForestRegressor.pkl", "LinearRegression.pkl", "Ridge.pkl", "Lasso.pkl", "ElasticNet.pkl","SVR.pkl",
-"DecisionTreeRegressor.pkl", "KNeighborsRegressor.pkl", "GradientBoostingRegressor.pkl",
-"AdaBoostRegressor.pkl", "XGBRegressor.pkl"]
+"LinearRegression.pkl", "Ridge.pkl", "Lasso.pkl", "ElasticNet.pkl"]
 failed_models=["DecisionTreeRegressor.pkl","KNeighborsRegressor.pkl", "GradientBoostingRegressor.pkl",
 "AdaBoostRegressor.pkl", "XGBRegressor.pkl"]
 almost=["RandomForestRegressor.pkl","SVR.pkl"]
-rmses_test=[7.1709254870222665,6.944043233035345,6.941490841645733,9.664759120252853,9.665046975303072,
-9.63608964815864,10.396960145512226,10.345836464048702,6.975835114681261,
-7.585558024483646,6.9671111027529635]
-rmses_train=[2.711735, 6.973573, 6.974939, 9.755895, 9.752933, 9.722809, 
-             0.000000, 8.564980, 6.736251, 7.627707, 5.037337]
+rmses_test=[6.944043233035345,6.941490841645733,9.664759120252853,9.665046975303072]
+rmses_train=[ 6.973573, 6.974939, 9.755895, 9.752933]
 valid=[]        
 x=''
 for i, model in enumerate(models_name):
